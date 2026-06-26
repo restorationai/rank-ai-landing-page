@@ -1,0 +1,171 @@
+---
+---
+
+<div id="feature-modal" class="feature-modal-overlay hidden" aria-hidden="true">
+  <div class="feature-modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button id="close-modal-btn" class="close-modal-btn" aria-label="Close modal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <div class="modal-content">
+      <h3 id="modal-title" class="modal-title">Feature Title</h3>
+      <p id="modal-desc" class="modal-desc">Feature description goes here.</p>
+      
+      <div class="modal-actions">
+        <button id="modal-cta-btn" class="modal-cta-btn">Speak with Us</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .feature-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 1rem;
+  }
+
+  .feature-modal-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .feature-modal-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: 20px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    transform: scale(1) translateY(0);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .feature-modal-overlay.hidden .feature-modal-card {
+    transform: scale(0.95) translateY(10px);
+  }
+
+  .close-modal-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #f1f5f9;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .close-modal-btn:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+  }
+
+  .close-modal-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .modal-desc {
+    font-size: 1.05rem;
+    color: #475569;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .modal-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-cta-btn {
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.1), 0 2px 4px -1px rgba(15, 23, 42, 0.06);
+  }
+
+  .modal-cta-btn:hover {
+    background-color: #1e293b;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -2px rgba(15, 23, 42, 0.05);
+  }
+
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .feature-modal-card {
+      background: #1e293b;
+      border-color: rgba(51, 65, 85, 0.8);
+    }
+    
+    .close-modal-btn {
+      background: #334155;
+      color: #94a3b8;
+    }
+    
+    .close-modal-btn:hover {
+      background: #475569;
+      color: white;
+    }
+    
+    .modal-title {
+      color: white;
+    }
+    
+    .modal-desc {
+      color: #cbd5e1;
+    }
+    
+    .modal-cta-btn {
+      background-color: white;
+      color: #0f172a;
+    }
+    
+    .modal-cta-btn:hover {
+      background-color: #f1f5f9;
+    }
+  }
+</style>

@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import FeatureModal from './FeatureModal.astro';
 ---
 
 <section id="how-it-works" class="how-it-works">
@@ -27,7 +28,7 @@ import '../styles/global.css';
             <h3>Local SEO</h3>
           </div>
           <p class="way-card-description">Dominate city-level rankings with map-based analytics and geographic performance insights.</p>
-          <a href="#audit" class="way-learn-more">Learn More <span class="arrow">→</span></a>
+          <a href="#" class="modal-trigger" data-modal-title="Local SEO Domination" data-modal-desc="Rank at the very top of Google Maps to dominate your local market. We provide geo-grid tracking to help you expand your service radius, ensuring you capture more high-value emergency calls nearby." data-modal-benefits="Rank Higher,More Leads" class="way-learn-more">Learn More <span class="arrow">→</span></a>
           
           <!-- Mock Geo-grid UI -->
           <div class="mock-widget geo-grid-widget">
@@ -83,7 +84,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>GBP Content Creation</h4>
               <p>Auto-publish optimized updates and service announcements directly to your Google Business Profile.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Automated GBP Content" data-modal-desc="Keep your Google Business Profile active to signal local authority to search engines. We auto-publish service updates so your listing outranks competitors, driving more direct calls to your business." data-modal-benefits="Active Profile,Higher Trust">Learn More →</a>
             </div>
           </div>
           <!-- Subcard 2 -->
@@ -96,7 +97,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>GBP Questions & Answers</h4>
               <p>Pre-populate and auto-answer FAQs on Google Maps to address client concerns instantly.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Pre-emptive FAQs" data-modal-desc="Turn searches into immediate calls by eliminating customer objections instantly. We populate your profile with expert answers that act as high-converting local keywords, boosting your search visibility." data-modal-benefits="Higher Searchability,Increased Conversions">Learn More →</a>
             </div>
           </div>
           <!-- Subcard 3 -->
@@ -111,7 +112,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>GBP Photos & Videos</h4>
               <p>Optimize and tag emergency project photos with metadata and geocoordinates automatically.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Geo-tagged Media" data-modal-desc="Prove your local presence to search engines by turning every job photo into a geo-targeted ranking signal. This hyper-local metadata pushes your map listing higher, resulting in more localized emergency leads." data-modal-benefits="Local Proof,Better Rankings">Learn More →</a>
             </div>
           </div>
           <!-- Subcard 4 -->
@@ -124,7 +125,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>Google 5-Star Reviews</h4>
               <p>Launch automated review campaigns to get your business a consistent flow of reviews.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Review Automation" data-modal-desc="Skyrocket your visibility and conversion rate by automating 5-star review requests via SMS and email. A massive review count boosts rankings and builds immediate trust, making homeowners see you first, and choose you over the competition every time." data-modal-benefits="5-Star Reputation,Instant Trust">Learn More →</a>
             </div>
           </div>
         </div>
@@ -140,7 +141,7 @@ import '../styles/global.css';
             <h3>AI Search</h3>
           </div>
           <p class="way-card-description">Get recommended on ChatGPT, Google Gemini, and Perplexity when homeowners search for restoration services.</p>
-          <a href="#audit" class="way-learn-more">Learn More <span class="arrow">→</span></a>
+          <a href="#" class="modal-trigger" data-modal-title="AI Search Visibility" data-modal-desc="Capture the next generation of leads by being the #1 recommended company on ChatGPT, Gemini, and Perplexity. When homeowners ask AI for the best local restoration service, it recommends you." data-modal-benefits="Future-Proof,Top AI Recommendation" class="way-learn-more">Learn More <span class="arrow">→</span></a>
 
           <!-- Mock AI Rankings UI -->
           <div class="mock-widget ai-rankings-widget">
@@ -186,7 +187,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>AI Crawl & Indexing</h4>
               <p>Ensure GPTBot, Gemini, and Claude crawler agents index your site pages successfully.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="AI Bot Indexing" data-modal-desc="We technically structure your site so AI crawler bots can easily read and index your services. This guarantees AI models have your exact contact info ready to hand to homeowners in need." data-modal-benefits="Crawlable Site,Instant Indexing">Learn More →</a>
             </div>
           </div>
           <!-- Subcard 2 -->
@@ -199,7 +200,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>Conversation Optimization</h4>
               <p>Optimize your site structure and FAQs to align with how humans converse with LLM systems.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Conversational SEO" data-modal-desc="We optimize your site for the conversational questions homeowners actually ask AI assistants. Matching this natural language makes AI highly likely to cite your business as the definitive local expert." data-modal-benefits="Natural Language,Voice Search Ready">Learn More →</a>
             </div>
           </div>
           <!-- Subcard 3 -->
@@ -212,7 +213,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>Brand Mentions & Citation</h4>
               <p>Automatically build citations and structured data for AI search platforms to recommend your services.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="AI Citation Building" data-modal-desc="AI models only recommend companies they trust. We automatically build high-authority citations across the web, training AI algorithms to confidently send high-intent jobs your way." data-modal-benefits="High Authority,Verified Trust">Learn More →</a>
             </div>
           </div>
           <!-- Subcard 4 -->
@@ -229,7 +230,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>Targeted Blogs, FAQs & Videos</h4>
               <p>Publish targeted blog posts, FAQs, and YouTube videos loaded with JSON-LD schema to feed AI search models.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Semantic Content" data-modal-desc="We publish targeted content packed with rich JSON-LD schema to directly train AI models. Feeding the algorithms exactly what they want translates to a direct increase in AI-driven phone calls." data-modal-benefits="Data-Rich,AI-Trained">Learn More →</a>
             </div>
           </div>
         </div>
@@ -247,7 +248,7 @@ import '../styles/global.css';
             <h3>Paid Ads & PPC <span class="new-tag">New</span></h3>
           </div>
           <p class="way-card-description">Capture immediate emergency calls with high-performance Google Local Services Ads (LSA) and Google PPC campaigns.</p>
-          <a href="#audit" class="way-learn-more">Learn More <span class="arrow">→</span></a>
+          <a href="#" class="modal-trigger" data-modal-title="High-Intent Paid Ads" data-modal-desc="Skip the organic wait and get the phone ringing immediately. We manage high-performance Google Local Services and PPC campaigns strictly optimized to maximize your return on ad spend with booked jobs." data-modal-benefits="Instant Calls,Emergency Leads" class="way-learn-more">Learn More <span class="arrow">→</span></a>
 
           <!-- Mock PPC Widget -->
           <div class="mock-widget ppc-widget">
@@ -302,7 +303,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>Google LSA Management</h4>
               <p>Handle your Google Local Services Ads, ensuring your "Google Screened" badge stays active and leads are verified.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Google Screened LSA" data-modal-desc="Capture the highest-intent emergency calls by maintaining your &quot;Google Screened&quot; badge at the very top of search results. We manage your LSA profile to ensure you only pay for valid, booked jobs." data-modal-benefits="Google Trusted,Verified Jobs">Learn More →</a>
             </div>
           </div>
           <!-- Subcard 2 -->
@@ -319,7 +320,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>PPC Keyword Targeting</h4>
               <p>Setup negative keywords and high-priority search terms to stop wasted ad spend.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Precision PPC" data-modal-desc="Stop wasting budget on unqualified clicks. We aggressively target high-priority search terms so every dollar you spend is focused on homeowners actively seeking emergency services." data-modal-benefits="Zero Wasted Ad Spend,High ROI">Learn More →</a>
             </div>
           </div>
           <!-- Subcard 3 -->
@@ -332,7 +333,7 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>Call Tracking & Recording</h4>
               <p>Dynamic call tracking numbers to match leads to ad campaigns and record intake agent performance.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Dynamic Call Tracking" data-modal-desc="Know exactly which ad campaigns are actually booking jobs. We dynamically track and record every call so you can optimize your marketing spend and improve your intake team's conversion rate." data-modal-benefits="Data Driven,Cost-Per-Lead Tracking">Learn More →</a>
             </div>
           </div>
           <!-- Subcard 4 -->
@@ -349,11 +350,78 @@ import '../styles/global.css';
             <div class="sub-content">
               <h4>24/7 AI Receptionist</h4>
               <p>Never miss an expensive ad click. Our AI instantly answers calls and books appointments from your paid campaigns.</p>
-              <a href="#audit">Learn More →</a>
+              <a href="#" class="modal-trigger" data-modal-title="Missed-Call Rescue" data-modal-desc="Never lose an expensive ad lead to a voicemail ever again. Our 24/7 AI voice agent instantly answers missed calls and books appointments, turning missed opportunities into guaranteed revenue." data-modal-benefits="24/7 Booking,Never Miss A Lead">Learn More →</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
+<FeatureModal />
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('feature-modal');
+    const titleEl = document.getElementById('modal-title');
+    const descEl = document.getElementById('modal-desc');
+    const closeBtn = document.getElementById('close-modal-btn');
+    const ctaBtn = document.getElementById('modal-cta-btn');
+    const triggers = document.querySelectorAll('.modal-trigger');
+
+    if (!modal) return;
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const title = trigger.getAttribute('data-modal-title') || 'Feature Details';
+        const desc = trigger.getAttribute('data-modal-desc') || '';
+        const benefitsAttr = trigger.getAttribute('data-modal-benefits') || '';
+        
+        if (titleEl) titleEl.textContent = title;
+        if (descEl) descEl.textContent = desc;
+        
+        const benefitsContainer = document.getElementById('modal-benefits');
+        if (benefitsContainer) {
+          benefitsContainer.innerHTML = '';
+          if (benefitsAttr) {
+            const benefits = benefitsAttr.split(',');
+            benefits.forEach(b => {
+              const span = document.createElement('span');
+              span.className = 'benefit-tag';
+              span.textContent = b.trim();
+              benefitsContainer.appendChild(span);
+            });
+          }
+        }
+        
+        modal.classList.remove('hidden');
+      });
+    });
+
+    const closeModal = () => {
+      modal.classList.add('hidden');
+    };
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    
+    // Close modal if user clicks on the overlay background
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    if (ctaBtn) {
+      ctaBtn.addEventListener('click', () => {
+        closeModal();
+        // Redirect to calendar section
+        window.location.hash = '#calendar';
+      });
+    }
+  });
+</script>
+

@@ -3867,9 +3867,13 @@ ul {
   background-color: var(--bg-color);
 }
 
+.booking-section .section-header {
+  margin-bottom: 1.5rem;
+}
+
 .calendar-wrapper {
   max-width: 800px;
-  margin: 3rem auto 0;
+  margin: 0 auto;
   background: var(--surface);
   border-radius: 16px;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
