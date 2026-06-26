@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+---
+
+<section id="demo" class="cta-section">
+  <div class="container">
+    <div class="cta-card">
+      <!-- Background Concentric Circles -->
+      <div class="cta-bg-graphics">
+        <svg class="cta-concentric-circles" viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="500" cy="600" r="400" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.5" />
+          <circle cx="500" cy="600" r="550" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1.5" />
+          <circle cx="500" cy="600" r="700" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.5" />
+          <circle cx="500" cy="600" r="850" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5" />
+        </svg>
+      </div>
+
+      <!-- Floating Icons -->
+      <div class="cta-floating-icons">
+        <!-- Google (Center Top) -->
+        <div class="cta-float-icon icon-google">
+          <img src="/google-icon.png" alt="Google" />
+        </div>
+        <!-- ChatGPT (Top Right) -->
+        <div class="cta-float-icon icon-chatgpt">
+          <img src="/chatgpt.png" alt="ChatGPT" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M12 2a10 10 0 1 0 10 10H12V2z\'/></svg>'" />
+        </div>
+        <!-- Claude (Bottom Right) -->
+        <div class="cta-float-icon icon-claude">
+          <img src="/claude.png" alt="Claude" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg>'" />
+        </div>
+        <!-- Perplexity (Top Left) -->
+        <div class="cta-float-icon icon-perplexity">
+          <img src="/perplexity.png" alt="Perplexity AI" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><polygon points=\'12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2\'/></svg>'" />
+        </div>
+        <!-- Other Logo (Mid Left) -->
+        <div class="cta-float-icon icon-other">
+           <svg viewBox="0 0 24 24" fill="none" stroke="#e77457" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5l-10 14M22 12H2M19 17L5 7"></path>
+           </svg>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="cta-content">
+        <h2>Ready to Start Getting<br/>Consistent Jobs?</h2>
+        <p>Use our free tools to get instant insights into your local visibility and discover how to capture more leads.</p>
+        
+        <div class="cta-actions">
+          <a href="#audit" class="cta-btn btn-primary-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Get Free Audit
+          </a>
+          <a href="#calendar" class="cta-btn btn-secondary-white">
+            Speak with us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

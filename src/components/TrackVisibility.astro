@@ -1,0 +1,403 @@
+---
+import '../styles/global.css';
+---
+
+<section id="track-visibility" class="track-visibility-section">
+  <div class="container">
+    <!-- Header -->
+    <div class="section-header">
+      <div class="section-tag-wrapper orange-tag">
+        <svg class="section-tag-icon orange-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="20" x2="18" y2="10"></line>
+          <line x1="12" y1="20" x2="12" y2="4"></line>
+          <line x1="6" y1="20" x2="6" y2="14"></line>
+        </svg>
+        <span class="section-tag orange-text">Rank Analytics</span>
+      </div>
+      <h2>Track Your Visibility Everywhere</h2>
+      <p class="section-subtitle">Track your rankings across ChatGPT, Claude, Perplexity, and traditional search engines to see how AI-driven traffic impacts your business.</p>
+    </div>
+
+    <!-- Main Dashboard Card -->
+    <div class="analytics-dashboard-card">
+      <div class="dashboard-header-row">
+        <div class="dashboard-tabs">
+          <button class="dashboard-tab active">AI Platform Rankings</button>
+          <button class="dashboard-tab">Citations by mentioned</button>
+        </div>
+        <div class="dashboard-controls">
+          <div class="toggle-group">
+            <button class="toggle-btn"><svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>Line</button>
+            <button class="toggle-btn active"><svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><rect x="7" y="10" width="3" height="7" rx="1"></rect><rect x="13" y="6" width="3" height="11" rx="1"></rect><rect x="17" y="12" width="3" height="5" rx="1"></rect></svg>Bar</button>
+          </div>
+          <button class="select-dropdown">
+            <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            This week
+            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Platform Metric Chips -->
+      <div class="platform-chips-row">
+        <!-- ChatGPT -->
+        <div class="platform-chip chip-chatgpt">
+          <div class="chip-logo-wrapper logo-chatgpt">
+            <img src="/chatgpt.png" alt="ChatGPT" class="platform-logo-img" />
+          </div>
+          <span class="chip-name">ChatGPT</span>
+          <span class="chip-value">11,815</span>
+        </div>
+
+        <!-- Google Gemini -->
+        <div class="platform-chip chip-gemini">
+          <div class="chip-logo-wrapper logo-gemini">
+            <img src="/gemini.png" alt="Google Gemini" class="platform-logo-img" />
+          </div>
+          <span class="chip-name">Google Gemini</span>
+          <span class="chip-value">8,984</span>
+        </div>
+
+        <!-- Perplexity AI -->
+        <div class="platform-chip chip-perplexity">
+          <div class="chip-logo-wrapper logo-perplexity">
+            <img src="/perplexity.png" alt="Perplexity AI" class="platform-logo-img" />
+          </div>
+          <span class="chip-name">Perplexity AI</span>
+          <span class="chip-value">6,103</span>
+        </div>
+
+        <!-- Claude -->
+        <div class="platform-chip chip-claude">
+          <div class="chip-logo-wrapper logo-claude">
+            <img src="/claude.png" alt="Claude" class="platform-logo-img" />
+          </div>
+          <span class="chip-name">Claude</span>
+          <span class="chip-value">3,979</span>
+        </div>
+      </div>
+
+      <!-- Segmented Bar Chart Container -->
+      <div class="chart-container">
+        <!-- Horizontal Grid Lines -->
+        <div class="chart-grid-lines">
+          <div class="grid-line"></div>
+          <div class="grid-line"></div>
+          <div class="grid-line"></div>
+          <div class="grid-line"></div>
+        </div>
+
+        <!-- Columns for each day -->
+        <div class="chart-days-row">
+          <!-- Mon -->
+          <div class="chart-day-group">
+            <div class="bar-group">
+              <div class="segmented-bar h-mon-1">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-mon-2">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-mon-3">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-mon-4">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+            </div>
+            <span class="day-label">Mon</span>
+          </div>
+
+          <!-- Tue -->
+          <div class="chart-day-group">
+            <div class="bar-group">
+              <div class="segmented-bar h-tue-1">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-tue-2">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-tue-3">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-tue-4">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+            </div>
+            <span class="day-label">Tue</span>
+          </div>
+
+          <!-- Wed -->
+          <div class="chart-day-group">
+            <div class="bar-group">
+              <div class="segmented-bar h-wed-1">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-wed-2">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-wed-3">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-wed-4">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+            </div>
+            <span class="day-label">Wed</span>
+          </div>
+
+          <!-- Thu -->
+          <div class="chart-day-group">
+            <div class="bar-group">
+              <div class="segmented-bar h-thu-1">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-thu-2">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-thu-3">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-thu-4">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+            </div>
+            <span class="day-label">Thu</span>
+          </div>
+
+          <!-- Fri -->
+          <div class="chart-day-group">
+            <div class="bar-group">
+              <div class="segmented-bar h-fri-1">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-fri-2">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-fri-3">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-fri-4">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+            </div>
+            <span class="day-label">Fri</span>
+          </div>
+
+          <!-- Sat -->
+          <div class="chart-day-group">
+            <div class="bar-group">
+              <div class="segmented-bar h-sat-1">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-sat-2">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-sat-3">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-sat-4">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+            </div>
+            <span class="day-label">Sat</span>
+          </div>
+
+          <!-- Sun -->
+          <div class="chart-day-group">
+            <div class="bar-group">
+              <div class="segmented-bar h-sun-1">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-sun-2">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-sun-3">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+              <div class="segmented-bar h-sun-4">
+                <div class="bar-segment purple"></div>
+                <div class="bar-segment yellow"></div>
+                <div class="bar-segment orange"></div>
+                <div class="bar-segment red"></div>
+              </div>
+            </div>
+            <span class="day-label">Sun</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4-Column Cards Grid -->
+    <div class="insights-grid">
+      <!-- AI Recommendations -->
+      <div class="insight-card">
+        <div class="insight-card-header">
+          <div class="insight-icon-wrapper orange-glow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+              <path d="M12 2a10 10 0 0 1 10 10h-10V2z" opacity="0.3"></path>
+              <path d="M12 12L2.69 7a10 10 0 0 0 18.62 0L12 12z"></path>
+            </svg>
+          </div>
+          <span class="badge-new">New</span>
+        </div>
+        <h3>AI Recommendations</h3>
+        <p>Track how often ChatGPT, Gemini, and Claude recommend your business when local homeowners search for emergency cleanup.</p>
+        <a href="#" class="learn-more-link">
+          Learn More 
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- AI Citation Builder -->
+      <div class="insight-card">
+        <div class="insight-card-header">
+          <div class="insight-icon-wrapper orange-glow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <span class="badge-new">New</span>
+        </div>
+        <h3>AI Citation Builder</h3>
+        <p>View which references AI uses to recommend your business. Our platform monitors this weekly and adds missing citations to automatically boost your rank.</p>
+        <a href="#" class="learn-more-link">
+          Learn More 
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Google Maps Tracker -->
+      <div class="insight-card">
+        <div class="insight-card-header">
+          <div class="insight-icon-wrapper green-glow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+        </div>
+        <h3>Google Maps Tracker</h3>
+        <p>Track your local Google Maps rankings in each city to make sure your company is the first contractor homeowners see.</p>
+        <a href="#" class="learn-more-link">
+          Learn More 
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Weekly Autopilot -->
+      <div class="insight-card">
+        <div class="insight-card-header">
+          <div class="insight-icon-wrapper purple-glow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <span class="badge-new">New</span>
+        </div>
+        <h3>Weekly Autopilot</h3>
+        <p>We monitor your ranking movements weekly, design a custom improvement plan, and automatically implement it to build your authority.</p>
+        <a href="#" class="learn-more-link">
+          Learn More 
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
