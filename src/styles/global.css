@@ -196,7 +196,7 @@ ul {
 /* Split-Screen Layout styles */
 .hero.split .container {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 0.95fr 1.05fr;
   gap: 4rem;
   align-items: center;
   text-align: left;
