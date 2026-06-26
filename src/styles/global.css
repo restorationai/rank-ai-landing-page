@@ -1893,6 +1893,18 @@ ul {
   background-color: rgba(217, 119, 6, 0.02);
 }
 
+.platform-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.dot-chatgpt { background-color: #10a37f; }
+.dot-gemini { background-color: #1a73e8; }
+.dot-perplexity { background-color: #208080; }
+.dot-claude { background-color: #d97706; }
+
 .chip-logo-wrapper {
   width: 2rem;
   height: 2rem;
@@ -1998,20 +2010,20 @@ ul {
   border-radius: 4px;
 }
 
-.bar-segment.purple {
-  background-color: #8b5cf6;
+.bar-segment.chatgpt {
+  background-color: #10a37f;
 }
 
-.bar-segment.yellow {
-  background-color: #f59e0b;
+.bar-segment.gemini {
+  background-color: #1a73e8;
 }
 
-.bar-segment.orange {
-  background-color: #10b981;
+.bar-segment.perplexity {
+  background-color: #208080;
 }
 
-.bar-segment.red {
-  background-color: #3b82f6;
+.bar-segment.claude {
+  background-color: #d97706;
 }
 
 /* Height values for each weekday's bars */
