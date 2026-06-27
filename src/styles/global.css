@@ -196,10 +196,11 @@ ul {
 /* Split-Screen Layout styles */
 .hero.split .container {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 3rem;
   align-items: center;
   text-align: left;
+  max-width: 1480px;
 }
 
 .hero.split h1 {
